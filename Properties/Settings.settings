@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ChromaSelect.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BGPrimary" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">16, 16, 20</Value>
+    </Setting>
+    <Setting Name="BGSecondary" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">20, 20, 26</Value>
+    </Setting>
+    <Setting Name="BGTertiary" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">25, 25, 31</Value>
+    </Setting>
+    <Setting Name="BGButton" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">16, 16, 20</Value>
+    </Setting>
+    <Setting Name="DetailColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">60, 60, 66</Value>
+    </Setting>
+    <Setting Name="DetailActive" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Cyan</Value>
+    </Setting>
+    <Setting Name="TextColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="PlaceholderColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">193, 200, 207</Value>
+    </Setting>
+    <Setting Name="NotifColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">ControlText</Value>
+    </Setting>
+    <Setting Name="TxtNotif" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NotifText</Value>
+    </Setting>
+    <Setting Name="NotifWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">226</Value>
+    </Setting>
+    <Setting Name="Version" Type="System.String" Scope="User">
+      <Value Profile="(Default)">v1.0.0</Value>
+    </Setting>
+    <Setting Name="BorderRadius" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="RoundedControls" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HotKeyForm" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
