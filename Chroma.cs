@@ -2,7 +2,6 @@
 using System;
 using System.Diagnostics;
 using System.Drawing;
-using System.Security.Policy;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -88,14 +87,14 @@ namespace ChromaSelect
             }
             else if (keyData == (Keys.Control | Keys.C))
             {
-                if (SelectedColor != null) { NoColorSelected(); return true; }
+                if (TxtHexColor.Text == "") { NoColorSelected(); return true; }
                 Clipboard.SetText(ColorTranslator.ToHtml(SelectedColor));
                 NotificationManager.CreateNotif(Color.Lime, "Hex color copied to clipboard!");
                 return true;
             }
             else if (keyData == (Keys.Control | Keys.Shift| Keys.C))
             {
-                if (SelectedColor != null) { NoColorSelected(); return true; }
+                if (TxtHexColor.Text == "") { NoColorSelected(); return true; }
                 Clipboard.SetText(TxtRGBColor.Text);
                 NotificationManager.CreateNotif(Color.Lime, "RGB color copied to clipboard!");
                 return true;
@@ -276,7 +275,7 @@ namespace ChromaSelect
 
         private void PanelColorPreview_MouseClick(object sender, MouseEventArgs e)
         {
-            if (SelectedColor != null) { NoColorSelected(); return; }
+            if (TxtHexColor.Text == "") { NoColorSelected(); return; }
             if (Control.ModifierKeys == Keys.Control)
             {
                 Clipboard.SetText($"RGB: {TxtRGBColor.Text}\nHex: {TxtHexColor.Text}");
