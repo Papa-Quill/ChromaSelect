@@ -36,7 +36,7 @@
       <Value Profile="(Default)">226</Value>
     </Setting>
     <Setting Name="Version" Type="System.String" Scope="User">
-      <Value Profile="(Default)">v1.0.0</Value>
+      <Value Profile="(Default)">v1.0.2</Value>
     </Setting>
     <Setting Name="BorderRadius" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">8</Value>
