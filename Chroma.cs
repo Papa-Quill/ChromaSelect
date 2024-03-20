@@ -40,7 +40,7 @@ namespace ChromaSelect
             PanelColorPreview.HoverState.FillColor = SelectedColor;
 
             var controlsToModify = new Control[] {
-                BtnClose, BtnMinimize, BtnColorPicker, BtnHotKeys,
+                BtnClose, BtnMinimize, BtnColorPicker, BtnHotkeys,
                 TxtHexColor, TxtRGBColor, PanelColorPreview };
 
             foreach (var control in controlsToModify)

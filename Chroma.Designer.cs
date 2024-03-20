@@ -49,7 +49,7 @@
             this.TxtRGBColor = new Guna.UI2.WinForms.Guna2TextBox();
             this.PanelSEEHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnHotKeys = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnHotkeys = new Guna.UI2.WinForms.Guna2Button();
             this.BtnMinimize = new Guna.UI2.WinForms.Guna2Button();
             this.LabelTitle = new System.Windows.Forms.Label();
             this.LabelVersion = new System.Windows.Forms.Label();
@@ -81,7 +81,7 @@
             // 
             // PanelSEEBody
             // 
-            this.PanelSEEBody.AccessibleName = "PanelSEEBody";
+            this.PanelSEEBody.AccessibleName = "PanelBody";
             this.PanelSEEBody.BackColor = System.Drawing.Color.Transparent;
             this.PanelSEEBody.BorderColor = global::ChromaSelect.Properties.Settings.Default.DetailColor;
             this.PanelSEEBody.BorderRadius = global::ChromaSelect.Properties.Settings.Default.BorderRadius;
@@ -124,12 +124,12 @@
             this.PanelColorPreview.BorderThickness = 1;
             this.PanelColorPreview.CheckedState.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold);
             this.PanelColorPreview.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PanelColorPreview.DataBindings.Add(new System.Windows.Forms.Binding("FillColor", global::ChromaSelect.Properties.Settings.Default, "BGTertiary", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.PanelColorPreview.DataBindings.Add(new System.Windows.Forms.Binding("BorderColor", global::ChromaSelect.Properties.Settings.Default, "DetailColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.PanelColorPreview.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.PanelColorPreview.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.PanelColorPreview.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.PanelColorPreview.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.PanelColorPreview.FillColor = System.Drawing.Color.Empty;
             this.PanelColorPreview.Font = new System.Drawing.Font("Gadugi", 10F);
             this.PanelColorPreview.ForeColor = System.Drawing.Color.White;
             this.PanelColorPreview.ImageSize = new System.Drawing.Size(16, 16);
@@ -373,13 +373,13 @@
             // 
             // PanelSEEHeader
             // 
-            this.PanelSEEHeader.AccessibleName = "PanelSEEHeader";
+            this.PanelSEEHeader.AccessibleName = "PanelHeader";
             this.PanelSEEHeader.BackColor = System.Drawing.Color.Transparent;
             this.PanelSEEHeader.BorderColor = global::ChromaSelect.Properties.Settings.Default.DetailColor;
             this.PanelSEEHeader.BorderRadius = global::ChromaSelect.Properties.Settings.Default.BorderRadius;
             this.PanelSEEHeader.BorderThickness = 1;
             this.PanelSEEHeader.Controls.Add(this.BtnClose);
-            this.PanelSEEHeader.Controls.Add(this.BtnHotKeys);
+            this.PanelSEEHeader.Controls.Add(this.BtnHotkeys);
             this.PanelSEEHeader.Controls.Add(this.BtnMinimize);
             this.PanelSEEHeader.Controls.Add(this.LabelTitle);
             this.PanelSEEHeader.CustomizableEdges.BottomLeft = false;
@@ -419,26 +419,26 @@
             this.BtnClose.Text = "X";
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
-            // BtnHotKeys
+            // BtnHotkeys
             // 
-            this.BtnHotKeys.AccessibleName = "BtnHotKeys";
-            this.BtnHotKeys.Animated = true;
-            this.BtnHotKeys.BorderColor = System.Drawing.Color.White;
-            this.BtnHotKeys.BorderThickness = 1;
-            this.BtnHotKeys.CheckedState.CustomBorderColor = System.Drawing.Color.White;
-            this.BtnHotKeys.CheckedState.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnHotKeys.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnHotKeys.FillColor = System.Drawing.Color.Empty;
-            this.BtnHotKeys.Font = new System.Drawing.Font("Azonix", 11F);
-            this.BtnHotKeys.ForeColor = System.Drawing.Color.White;
-            this.BtnHotKeys.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.BtnHotKeys.Location = new System.Drawing.Point(281, 15);
-            this.BtnHotKeys.Name = "BtnHotKeys";
-            this.BtnHotKeys.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(36)))));
-            this.BtnHotKeys.Size = new System.Drawing.Size(30, 30);
-            this.BtnHotKeys.TabIndex = 4;
-            this.BtnHotKeys.Text = "?";
-            this.BtnHotKeys.Click += new System.EventHandler(this.BtnHotKeys_Click);
+            this.BtnHotkeys.AccessibleName = "BtnHotkeys";
+            this.BtnHotkeys.Animated = true;
+            this.BtnHotkeys.BorderColor = System.Drawing.Color.White;
+            this.BtnHotkeys.BorderThickness = 1;
+            this.BtnHotkeys.CheckedState.CustomBorderColor = System.Drawing.Color.White;
+            this.BtnHotkeys.CheckedState.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnHotkeys.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnHotkeys.FillColor = System.Drawing.Color.Empty;
+            this.BtnHotkeys.Font = new System.Drawing.Font("Azonix", 11F);
+            this.BtnHotkeys.ForeColor = System.Drawing.Color.White;
+            this.BtnHotkeys.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.BtnHotkeys.Location = new System.Drawing.Point(281, 15);
+            this.BtnHotkeys.Name = "BtnHotkeys";
+            this.BtnHotkeys.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(36)))));
+            this.BtnHotkeys.Size = new System.Drawing.Size(30, 30);
+            this.BtnHotkeys.TabIndex = 4;
+            this.BtnHotkeys.Text = "?";
+            this.BtnHotkeys.Click += new System.EventHandler(this.BtnHotKeys_Click);
             // 
             // BtnMinimize
             // 
@@ -559,7 +559,7 @@
         private System.Windows.Forms.Label LabelTitle;
         private System.Windows.Forms.Label LabelVersion;
         private Guna.UI2.WinForms.Guna2Button PanelColorPreview;
-        private Guna.UI2.WinForms.Guna2Button BtnHotKeys;
+        private Guna.UI2.WinForms.Guna2Button BtnHotkeys;
     }
 }
 
