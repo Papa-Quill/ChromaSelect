@@ -295,14 +295,7 @@ namespace ChromaSelect
 
         private void LabelMadeBy_MouseClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                Process.Start("https://github.com/Papa-Quill/");
-            }
-            else
-            {
-                Process.Start("https://github.com/Papa-Quill/");
-            }
+            Process.Start("https://github.com/Papa-Quill/");
         }
     }
 }

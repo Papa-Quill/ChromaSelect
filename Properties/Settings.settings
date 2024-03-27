@@ -27,7 +27,7 @@
       <Value Profile="(Default)">193, 200, 207</Value>
     </Setting>
     <Setting Name="NotifColor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">ControlText</Value>
+      <Value Profile="(Default)">Red</Value>
     </Setting>
     <Setting Name="TxtNotif" Type="System.String" Scope="User">
       <Value Profile="(Default)">NotifText</Value>

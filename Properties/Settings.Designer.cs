@@ -121,7 +121,7 @@ namespace ChromaSelect.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ControlText")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Red")]
         public global::System.Drawing.Color NotifColor {
             get {
                 return ((global::System.Drawing.Color)(this["NotifColor"]));

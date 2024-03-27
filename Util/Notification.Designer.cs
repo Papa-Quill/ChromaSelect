@@ -97,8 +97,10 @@
             // PanelNotifColor
             // 
             this.PanelNotifColor.AccessibleName = "PanelNotifColor";
+            this.PanelNotifColor.BackColor = global::ChromaSelect.Properties.Settings.Default.NotifColor;
             this.PanelNotifColor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelNotifColor.DataBindings.Add(new System.Windows.Forms.Binding("FillColor", global::ChromaSelect.Properties.Settings.Default, "NotifColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.PanelNotifColor.DataBindings.Add(new System.Windows.Forms.Binding("BackColor", global::ChromaSelect.Properties.Settings.Default, "NotifColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.PanelNotifColor.FillColor = global::ChromaSelect.Properties.Settings.Default.NotifColor;
             this.PanelNotifColor.Location = new System.Drawing.Point(0, 0);
             this.PanelNotifColor.Name = "PanelNotifColor";

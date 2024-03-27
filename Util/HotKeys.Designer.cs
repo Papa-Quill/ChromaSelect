@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HotKeys));
             this.PanelNotifColor = new Guna.UI2.WinForms.Guna2Panel();
             this.NotifBox = new Guna.UI2.WinForms.Guna2Panel();
             this.LabelTitle = new System.Windows.Forms.Label();
@@ -43,7 +44,7 @@
             this.PanelNotifColor.FillColor = System.Drawing.Color.White;
             this.PanelNotifColor.Location = new System.Drawing.Point(0, -3);
             this.PanelNotifColor.Name = "PanelNotifColor";
-            this.PanelNotifColor.Size = new System.Drawing.Size(5, 313);
+            this.PanelNotifColor.Size = new System.Drawing.Size(5, 144);
             this.PanelNotifColor.TabIndex = 7;
             this.PanelNotifColor.Click += new System.EventHandler(this.HotKeys_Click);
             // 
@@ -110,6 +111,7 @@
             this.Controls.Add(this.NotifBox);
             this.DataBindings.Add(new System.Windows.Forms.Binding("BackColor", global::ChromaSelect.Properties.Settings.Default, "BGPrimary", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HotKeys";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "HotKeys";
