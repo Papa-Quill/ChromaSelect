@@ -44,6 +44,8 @@ namespace ChromaSelect.Util
 
             activeNotifications.Add(this);
             this.FormClosed += Notification_FormClosed;
+            TxtNotif.Text = Properties.Settings.Default.TxtNotif;
+            PanelNotifColor.FillColor = Properties.Settings.Default.NotifColor;
         }
 
         private void Notification_FormClosed(object sender, FormClosedEventArgs e)

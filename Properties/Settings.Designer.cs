@@ -145,19 +145,7 @@ namespace ChromaSelect.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("226")]
-        public int NotifWidth {
-            get {
-                return ((int)(this["NotifWidth"]));
-            }
-            set {
-                this["NotifWidth"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("v1.0.2")]
+        [global::System.Configuration.DefaultSettingValueAttribute("v1.0.3")]
         public string Version {
             get {
                 return ((string)(this["Version"]));

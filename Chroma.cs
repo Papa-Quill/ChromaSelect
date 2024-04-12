@@ -1,5 +1,6 @@
 ﻿using ChromaSelect.Util;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Text.RegularExpressions;
@@ -108,33 +109,43 @@ namespace ChromaSelect
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-        readonly Timer CloseTimer = new Timer();
-        private void FadeClosing(object sender, FormClosingEventArgs e)
+        private void FadeClose(Form form)
         {
-            e.Cancel = true;
-            T1.Tick += new EventHandler(FadeOut);
-            T1.Start();
-
-            if (Opacity == 0)
-                e.Cancel = false;
-        }
-        readonly Timer T1 = new Timer();
-        private void FadeOut(object sender, EventArgs e)
-        {
-            CloseTimer.Interval = 50;
-            if (Opacity <= 0)
+            Timer fadeTimer = new Timer
+            { Interval = 50 };
+            fadeTimer.Tick += (sender, e) =>
             {
-                T1.Stop();
-                this.Close();
+                if (form.Opacity <= 0)
+                {
+                    fadeTimer.Stop();
+                    form.Close();
+                }
+                else
+                    form.Opacity -= 0.3;
+            };
+            fadeTimer.Start();
+        }
+
+        private List<Form> GetAllOpenForms()
+        {
+            List<Form> openForms = new List<Form>();
+
+            foreach (Form form in Application.OpenForms)
+            {
+                openForms.Add(form);
             }
-            else
-                Opacity -= 0.3;
+
+            return openForms;
         }
 
         private void BtnClose_Click(object sender, EventArgs e)
         {
-            CloseTimer.Tick += new EventHandler(FadeOut);
-            CloseTimer.Start();
+            List<Form> openForms = GetAllOpenForms();
+
+            foreach (Form form in openForms)
+            {
+                FadeClose(form);
+            }
         }
 
         private void BtnMinimize_Click(object sender, EventArgs e)

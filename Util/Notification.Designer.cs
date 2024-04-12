@@ -63,7 +63,6 @@
             this.TxtNotif.AutoSize = true;
             this.TxtNotif.BackColor = System.Drawing.Color.Transparent;
             this.TxtNotif.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TxtNotif.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ChromaSelect.Properties.Settings.Default, "TxtNotif", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.TxtNotif.DataBindings.Add(new System.Windows.Forms.Binding("ForeColor", global::ChromaSelect.Properties.Settings.Default, "TextColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.TxtNotif.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.TxtNotif.ForeColor = global::ChromaSelect.Properties.Settings.Default.TextColor;
@@ -71,7 +70,7 @@
             this.TxtNotif.Name = "TxtNotif";
             this.TxtNotif.Size = new System.Drawing.Size(71, 21);
             this.TxtNotif.TabIndex = 3;
-            this.TxtNotif.Text = global::ChromaSelect.Properties.Settings.Default.TxtNotif;
+            this.TxtNotif.Text = "NotifText";
             this.TxtNotif.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TxtNotif.Click += new System.EventHandler(this.NotifBox_Click);
             this.TxtNotif.MouseEnter += new System.EventHandler(this.NotifBox_MouseHover);
@@ -97,11 +96,9 @@
             // PanelNotifColor
             // 
             this.PanelNotifColor.AccessibleName = "PanelNotifColor";
-            this.PanelNotifColor.BackColor = global::ChromaSelect.Properties.Settings.Default.NotifColor;
+            this.PanelNotifColor.BackColor = System.Drawing.Color.Red;
             this.PanelNotifColor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PanelNotifColor.DataBindings.Add(new System.Windows.Forms.Binding("FillColor", global::ChromaSelect.Properties.Settings.Default, "NotifColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.PanelNotifColor.DataBindings.Add(new System.Windows.Forms.Binding("BackColor", global::ChromaSelect.Properties.Settings.Default, "NotifColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.PanelNotifColor.FillColor = global::ChromaSelect.Properties.Settings.Default.NotifColor;
+            this.PanelNotifColor.FillColor = System.Drawing.Color.Red;
             this.PanelNotifColor.Location = new System.Drawing.Point(0, 0);
             this.PanelNotifColor.Name = "PanelNotifColor";
             this.PanelNotifColor.Size = new System.Drawing.Size(5, 70);
@@ -123,6 +120,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DataBindings.Add(new System.Windows.Forms.Binding("BackColor", global::ChromaSelect.Properties.Settings.Default, "BGPrimary", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Notification";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
